@@ -69,6 +69,12 @@ pagination.pagerSize = 5
   email = "nugrohoay@protonmail.com"
   linkedin = "nugrohoay"
 
+[params.style]
+backgroundColor = "#353839"
+foregroundColor = "#f2f0ef"
+accentColor = "#e5aa70"
+
+
 [languages]
   [languages.en]
     languageName = "English"
