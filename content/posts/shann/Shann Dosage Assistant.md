@@ -1,6 +1,6 @@
 ---
 title: Shann Dosage Assistant
-date: 2025-06-04
+date: 2025-05-04
 tags:
   - frank-shann
   - healthcare
@@ -9,10 +9,11 @@ tags:
   - mern
   - docker
 ---
-Give the website a try, here! -> [www.badroosterdevbox.space](https://www.badroosterdevbox.space)
+Give the website a try, login credential needed (please reach out to me)
 
-You will need a credential to login, please reach out to me
-![alt](/posts/shann/img/shann_output.gif)
+[www.badroosterdevbox.space](https://www.badroosterdevbox.space)
+![software usage gif](/posts/shann/img/shann_output.gif)
+
 ## Problem Statement
 Healthcare practitioners often struggle with accessing quick, accurate medication dosage information guideline. Traditional methods of looking up dosage information can be time-consuming, error-prone, and may not account for individual patient factors. Medical materials may be scattered across different sources, making it difficult to find consolidated information when needed.
 
@@ -52,6 +53,10 @@ By providing an intelligent dosage assistant, the system aims to:
 - Provide evidence-based medical suggestion
 - Provide medical guidance where senior resources are scarce
 
+## Solutions Architect
+
+![solutions architect diagram](/posts/shann/img/shann_architecture.png)
+
 ## Technical Specification
 
 This solution leverages modern AI capabilities while maintaining a focus on providing practical, reliable medication information through an accessible interface. This is a full-stack MERN (MongoDB, Express, React, Node.js) application which incorporates LLM services through Google GenAI integration.  
@@ -82,20 +87,15 @@ For full technical detail, please visit the [Github Repository](https://github.c
 - **LangChain Core**: 0.3.42  
 - **LangChain Google GenAI**: 0.2.8
 - **Gemini Flash 2.0**  
-
-## Features  
-  
-- React-based frontend with modern hooks and state management  
-- MongoDB database integration  
-- LLM service integration via Ollama, LangChain, using Gemma3:12b  
   
 
 ## Acknowledgements  
-
+- [Prof. Frank Shann](https://findanexpert.unimelb.edu.au/profile/2416-frank-shann) - Textbook Author
 - [Timotius Hanjaya GP](https://www.linkedin.com/in/timotius-dr/) - Medical Advisor
+- [Google Gen AI](https://cloud.google.com/ai/generative-ai) - AI model used
+- [LangChain](https://www.langchain.com/) - Framework for LLM applications  
+- [Ollama](https://ollama.ai/) - Run LLMs locally
 - [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling  
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces  
 - [MongoDB](https://www.mongodb.com/) - Document database  
 - [Express](https://expressjs.com/) - Web framework for Node.js  
-- [LangChain](https://www.langchain.com/) - Framework for LLM applications  
-- [Ollama](https://ollama.ai/) - Run LLMs locally
