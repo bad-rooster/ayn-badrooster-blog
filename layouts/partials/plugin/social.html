@@ -1,0 +1,40 @@
+{{- $url := .Url | default "" -}}
+{{- $id := .Id | default "" -}}
+{{- $icon := .Icon | default dict -}}
+{{- $title := .Title | default .Name | default $id -}}
+{{- $prefix := .Prefix | default "" -}}
+{{- $target := "" -}}
+{{- if or .Newtab (not (isset . "Newtab")) -}}
+{{- $target = " target=\"_blank\"" -}}
+{{- end -}}
+
+{{- if eq $url "" -}}
+{{- with .Template -}}
+{{- $url = replace . "${id}" $id -}}
+{{- end -}}
+{{- end -}}
+
+{{- if and (eq $url "") $id -}}
+{{- with .UrlTemplate -}}
+{{- $url = replace . "${id}" $id -}}
+{{- end -}}
+{{- end -}}
+
+{{- if $url -}}
+<a href="{{ $url }}" rel="me"{{ $target }} title="{{ $title }}" class="social-link">
+  {{- if .Icon -}}
+  {{- if .Icon.Simpleicons -}}
+  <span class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="{{ .Icon.Simpleicons }}"></path>
+                </svg>
+            </span>
+  {{- else if .Icon.Class -}}
+  <i class="{{ .Icon.Class }}"></i>
+  {{- else if .Icon.Src -}}
+  <img src="{{ $prefix }}{{ .Icon.Src }}" alt="{{ $title }}" />
+  {{- end -}}
+  {{- end -}}
+  <span class="social-name">{{ $title }}</span>
+</a>
+{{- end -}}

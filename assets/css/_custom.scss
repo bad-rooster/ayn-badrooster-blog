@@ -1,0 +1,33 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.icon-container {
+  margin: 0 10px;
+  display: flex; /* Make sure the container is also flex */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0; /* Remove any potential whitespace issues */
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  svg {
+    margin-right: 0;
+    font-size: initial; /* Reset font size for the SVG */
+  }
+}
+
+/* Remove or comment out the social-name class if you're not using it */
+.social-name {
+  display: none;
+}

@@ -1,0 +1,13 @@
+<div class="social-links">
+    {{- range $platform, $username := .Site.Params.social -}}
+    {{- if $username -}}
+    {{- with (index site.Data.social $platform) -}}
+    {{- $url := replace .url "${id}" $username -}}
+    <span class="icon-container">
+        <a href="{{ $url }}" target="_blank" rel="noopener" class="social-link" title="{{ .name }}">
+            {{ .icon | safeHTML }}</a>
+    </span>
+    {{- end -}}
+    {{- end -}}
+    {{- end -}}
+</div>
