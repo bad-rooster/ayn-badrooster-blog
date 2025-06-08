@@ -59,34 +59,10 @@ By providing an intelligent dosage assistant, the system aims to:
 
 ## Technical Specification
 
-This solution leverages modern AI capabilities while maintaining a focus on providing practical, reliable medication information through an accessible interface. This is a full-stack MERN (MongoDB, Express, React, Node.js) application which incorporates LLM services through Google GenAI integration.  
+This solution leverages modern AI capabilities while maintaining a focus on providing practical, reliable medication information through an accessible interface. This is a full-stack MERN (MongoDB, Express, React, Node.js) application which incorporates LLM services through Google GenAI Gemini Flash 2.0 model, connected using LangChain framework.  These services are load balanced and routed by NGINX while containerised using Docker, giving a scalable and maintainable solution.
 
 For full technical detail, please visit the [Github Repository](https://github.com/bad-rooster/shann-mern)
-  
-### Frontend  
-- **React**: 19.0.0  
-- **Vite**: 6.2.0 - fast development and builds  
-- **Chakra UI**: 3.14.0 - UI components  
-- **Zustand**: 5.0.3 - state management  
-- **React Markdown**: 10.1.0 - rendering markdown content 
-  
-### Backend  
-- **Express**: 4.21.2  
-- **MongoDB** with **Mongoose**: 8.12.1  
-- **CORS**: 2.8.5  
-- **Dotenv**: 16.4.7  
-- **Nodemon**: 3.1.9
 
-### Containerisation
-- **Docker**: 28.1.1 - container build
-- **Docker Compsose**: 2.35.1 - multi container composer
-- **NGINX**: 1.27.5  - container networking and load balancing
-
-  
-### AI/LLM Integration  
-- **LangChain Core**: 0.3.42  
-- **LangChain Google GenAI**: 0.2.8
-- **Gemini Flash 2.0**  
   
 
 ## Acknowledgements  
