@@ -81,9 +81,9 @@ accentColor = "#e5aa70"
     title = "ayn | badrooster blog"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
-      keywords = ""
+      subtitle = "ayn's blog revolving around tech and personal projects"
+      owner = "ayn | badrooster"
+      keywords = "tech, blog"
       copyright = ""
       menuMore = "Show more"
       readMore = "Read more"
