@@ -9,7 +9,7 @@ tags:
   - mern
   - docker
 ---
-Give the website a try, login credential needed (please reach out to me)
+Give the website a try, login credential needed (guest | wildernessguest098)
 
 [www.badroosterdevbox.space](https://www.badroosterdevbox.space)
 ![software usage gif](/posts/shann/img/shann_output.gif)
@@ -62,8 +62,6 @@ By providing an intelligent dosage assistant, the system aims to:
 This solution leverages modern AI capabilities while maintaining a focus on providing practical, reliable medication information through an accessible interface. This is a full-stack MERN (MongoDB, Express, React, Node.js) application which incorporates LLM services through Google GenAI Gemini Flash 2.0 model, connected using LangChain framework.  These services are load balanced and routed by NGINX while containerised using Docker, giving a scalable and maintainable solution.
 
 For full technical detail, please visit the [Github Repository](https://github.com/bad-rooster/shann-mern)
-
-  
 
 ## Acknowledgements  
 - [Prof. Frank Shann](https://findanexpert.unimelb.edu.au/profile/2416-frank-shann) - Textbook Author
